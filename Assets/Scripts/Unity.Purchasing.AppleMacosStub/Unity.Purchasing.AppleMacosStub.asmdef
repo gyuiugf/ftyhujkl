@@ -1,0 +1,7 @@
+{
+  "name": "Unity.Purchasing.AppleMacosStub",
+  "references": [
+    "Unity.Purchasing"
+  ],
+  "allowUnsafeCode": true
+}

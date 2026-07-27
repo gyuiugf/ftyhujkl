@@ -1,0 +1,10 @@
+{
+  "name": "Unity.2D.Animation.Runtime",
+  "references": [
+    "Unity.InternalAPIEngineBridge.001",
+    "Unity.Mathematics",
+    "Unity.Collections",
+    "Unity.Burst"
+  ],
+  "allowUnsafeCode": true
+}

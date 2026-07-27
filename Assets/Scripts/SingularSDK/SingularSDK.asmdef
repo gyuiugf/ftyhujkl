@@ -1,0 +1,8 @@
+{
+  "name": "SingularSDK",
+  "references": [
+    "Unity.Purchasing",
+    "Newtonsoft.Json"
+  ],
+  "allowUnsafeCode": true
+}

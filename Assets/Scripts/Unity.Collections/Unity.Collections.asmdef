@@ -1,0 +1,8 @@
+{
+  "name": "Unity.Collections",
+  "references": [
+    "Unity.Burst",
+    "Unity.Mathematics"
+  ],
+  "allowUnsafeCode": true
+}

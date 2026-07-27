@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8CB0A71F-89EF-48ED-BC12-664DB88F6AB7}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Firebase.Analytics">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Firebase.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.App">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Firebase.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.RemoteConfig">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Firebase.RemoteConfig.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.TaskExtension">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Firebase.TaskExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Play.Common">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Google.Play.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Play.Review">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Google.Play.Review.dll</HintPath>
+    </Reference>
+    <Reference Include="MaxSdk.Scripts">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\MaxSdk.Scripts.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayFab">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\PlayFab.dll</HintPath>
+    </Reference>
+    <Reference Include="SingularSDK">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\SingularSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Purchasing">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Unity.Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Purchasing.Codeless">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Unity.Purchasing.Codeless.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\Twin Bounce\cpp2il_out\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="AdManager.cs" />
+    <Compile Include="AnimDeactivator.cs" />
+    <Compile Include="Attack.cs" />
+    <Compile Include="AttackGenerator.cs" />
+    <Compile Include="AttackWave.cs" />
+    <Compile Include="BackEnd\BackEndManager.cs" />
+    <Compile Include="BackEnd\BasicSettings.cs" />
+    <Compile Include="BackEnd\LoginManager.cs" />
+    <Compile Include="BackEnd\UserBackendProfile.cs" />
+    <Compile Include="BallScript.cs" />
+    <Compile Include="BounceGoal.cs" />
+    <Compile Include="BreakableObject.cs" />
+    <Compile Include="CatapultGoal.cs" />
+    <Compile Include="ChatController.cs" />
+    <Compile Include="CircleGoal.cs" />
+    <Compile Include="Direction.cs" />
+    <Compile Include="DropdownSample.cs" />
+    <Compile Include="EnemyScript.cs" />
+    <Compile Include="EnvMapAnimator.cs" />
+    <Compile Include="ExpressionManager.cs" />
+    <Compile Include="FirebaseAdsManager.cs" />
+    <Compile Include="FirebaseEventManager.cs" />
+    <Compile Include="FirebaseRCManager.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="GameTimeCounter.cs" />
+    <Compile Include="GlobalGoal.cs" />
+    <Compile Include="GlobalGoalType.cs" />
+    <Compile Include="GoalObject.cs" />
+    <Compile Include="GoalZone.cs" />
+    <Compile Include="GPGSIds.cs" />
+    <Compile Include="GravityChanger.cs" />
+    <Compile Include="HitGoal.cs" />
+    <Compile Include="HitTarget.cs" />
+    <Compile Include="HoleGoal.cs" />
+    <Compile Include="Hoop.cs" />
+    <Compile Include="HoopCounterGoal.cs" />
+    <Compile Include="HoopDoor.cs" />
+    <Compile Include="HoopGoal.cs" />
+    <Compile Include="HoopRun.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="ImpactListener.cs" />
+    <Compile Include="InflatablePart.cs" />
+    <Compile Include="Laser.cs" />
+    <Compile Include="LeaderboardsManager.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelManager.cs" />
+    <Compile Include="MessageType.cs" />
+    <Compile Include="MovementBehaviour.cs" />
+    <Compile Include="MultiKeyDictionary.cs" />
+    <Compile Include="Needle.cs" />
+    <Compile Include="NeedleTop.cs" />
+    <Compile Include="ObjectGoal.cs" />
+    <Compile Include="ObstacleObject.cs" />
+    <Compile Include="OneDirectionMovement.cs" />
+    <Compile Include="PhisicsObject.cs" />
+    <Compile Include="PhysicsButton.cs" />
+    <Compile Include="PlayerManager.cs" />
+    <Compile Include="PlayfabLeaderboardsManager.cs" />
+    <Compile Include="PopAnimation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RectGoalZone.cs" />
+    <Compile Include="Reporter.cs" />
+    <Compile Include="ReporterGUI.cs" />
+    <Compile Include="ReporterMessageReceiver.cs" />
+    <Compile Include="ReviewsManager.cs" />
+    <Compile Include="Rotate.cs" />
+    <Compile Include="RotatingBehaviour.cs" />
+    <Compile Include="RunningStar.cs" />
+    <Compile Include="ScoreField.cs" />
+    <Compile Include="Side.cs" />
+    <Compile Include="SingularAdRevenueHandler.cs" />
+    <Compile Include="SingularEventManager.cs" />
+    <Compile Include="SizeChange.cs" />
+    <Compile Include="SizeChanger.cs" />
+    <Compile Include="SliceableObject.cs" />
+    <Compile Include="SliceAnimation.cs" />
+    <Compile Include="SoundManager.cs" />
+    <Compile Include="Speedrun.cs" />
+    <Compile Include="Spike.cs" />
+    <Compile Include="SpinSpeedGoal.cs" />
+    <Compile Include="Star.cs" />
+    <Compile Include="starEffect.cs" />
+    <Compile Include="StarGoal.cs" />
+    <Compile Include="TestReporter.cs" />
+    <Compile Include="TimeGoal.cs" />
+    <Compile Include="TimeGoalAC.cs" />
+    <Compile Include="TMPro\Examples\Benchmark01.cs" />
+    <Compile Include="TMPro\Examples\Benchmark01_UGUI.cs" />
+    <Compile Include="TMPro\Examples\Benchmark02.cs" />
+    <Compile Include="TMPro\Examples\Benchmark03.cs" />
+    <Compile Include="TMPro\Examples\Benchmark04.cs" />
+    <Compile Include="TMPro\Examples\CameraController.cs" />
+    <Compile Include="TMPro\Examples\ObjectSpin.cs" />
+    <Compile Include="TMPro\Examples\ShaderPropAnimator.cs" />
+    <Compile Include="TMPro\Examples\SimpleScript.cs" />
+    <Compile Include="TMPro\Examples\SkewTextExample.cs" />
+    <Compile Include="TMPro\Examples\TeleType.cs" />
+    <Compile Include="TMPro\Examples\TextConsoleSimulator.cs" />
+    <Compile Include="TMPro\Examples\TextMeshProFloatingText.cs" />
+    <Compile Include="TMPro\Examples\TextMeshSpawner.cs" />
+    <Compile Include="TMPro\Examples\TMPro_InstructionOverlay.cs" />
+    <Compile Include="TMPro\Examples\TMP_ExampleScript_01.cs" />
+    <Compile Include="TMPro\Examples\TMP_FrameRateCounter.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextEventCheck.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextInfoDebugTool.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextSelector_A.cs" />
+    <Compile Include="TMPro\Examples\TMP_TextSelector_B.cs" />
+    <Compile Include="TMPro\Examples\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="TMPro\Examples\VertexColorCycler.cs" />
+    <Compile Include="TMPro\Examples\VertexJitter.cs" />
+    <Compile Include="TMPro\Examples\VertexShakeA.cs" />
+    <Compile Include="TMPro\Examples\VertexShakeB.cs" />
+    <Compile Include="TMPro\Examples\VertexZoom.cs" />
+    <Compile Include="TMPro\Examples\WarpTextExample.cs" />
+    <Compile Include="TMPro\TMP_DigitValidator.cs" />
+    <Compile Include="TMPro\TMP_PhoneNumberValidator.cs" />
+    <Compile Include="TMPro\TMP_TextEventHandler.cs" />
+    <Compile Include="TransitionAnimation.cs" />
+    <Compile Include="UIManager.cs" />
+    <Compile Include="UnitySourceGeneratedAssemblyMonoScriptTypes_v1.cs" />
+    <Compile Include="UpdatePriceText.cs" />
+    <Compile Include="VelocityTracker.cs" />
+    <Compile Include="WaveGoal.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

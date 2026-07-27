@@ -1,0 +1,71 @@
+using System;
+using System.Collections.Generic;
+
+namespace UnityEngine.Purchasing
+{
+	[Serializable]
+	public class ProductCatalog
+	{
+		private static IProductCatalogImpl instance;
+
+		public string appleSKU;
+
+		public string appleTeamID;
+
+		public bool enableCodelessAutoInitialization;
+
+		public bool enableUnityGamingServicesAutoInitialization;
+
+		[SerializeField]
+		private List<ProductCatalogItem> products;
+
+		public const string kCatalogPath = "Assets/Resources/IAPProductCatalog.json";
+
+		public const string kPrevCatalogPath = "Assets/Plugins/UnityPurchasing/Resources/IAPProductCatalog.json";
+
+		public ICollection<ProductCatalogItem> allProducts => null;
+
+		public ICollection<ProductCatalogItem> allValidProducts => null;
+
+		internal static void Initialize()
+		{
+		}
+
+		public static void Initialize(IProductCatalogImpl productCatalogImpl)
+		{
+		}
+
+		public void Add(ProductCatalogItem item)
+		{
+		}
+
+		public void Remove(ProductCatalogItem item)
+		{
+		}
+
+		public bool IsEmpty()
+		{
+			return false;
+		}
+
+		public static string Serialize(ProductCatalog catalog)
+		{
+			return null;
+		}
+
+		public static ProductCatalog Deserialize(string catalogJSON)
+		{
+			return null;
+		}
+
+		public static ProductCatalog FromTextAsset(TextAsset asset)
+		{
+			return null;
+		}
+
+		public static ProductCatalog LoadDefaultCatalog()
+		{
+			return null;
+		}
+	}
+}

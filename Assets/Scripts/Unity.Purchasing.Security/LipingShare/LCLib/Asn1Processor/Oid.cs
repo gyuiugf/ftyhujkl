@@ -1,0 +1,43 @@
+using System.Collections.Specialized;
+using System.IO;
+
+namespace LipingShare.LCLib.Asn1Processor
+{
+	internal class Oid
+	{
+		private static StringDictionary oidDictionary;
+
+		public string GetOidName(string inOidStr)
+		{
+			return null;
+		}
+
+		public byte[] Encode(string oidStr)
+		{
+			return null;
+		}
+
+		public string Decode(byte[] data)
+		{
+			return null;
+		}
+
+		public virtual void Encode(Stream bt, string oidStr)
+		{
+		}
+
+		public virtual string Decode(Stream bt)
+		{
+			return null;
+		}
+
+		protected void EncodeValue(Stream bt, ulong v)
+		{
+		}
+
+		protected int DecodeValue(Stream bt, ref ulong v)
+		{
+			return 0;
+		}
+	}
+}

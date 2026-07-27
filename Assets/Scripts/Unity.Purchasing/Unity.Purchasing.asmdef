@@ -1,0 +1,9 @@
+{
+  "name": "Unity.Purchasing",
+  "references": [
+    "Unity.Purchasing.Utilities",
+    "Unity.Purchasing.SecurityCore",
+    "Unity.Services.Core.Internal"
+  ],
+  "allowUnsafeCode": true
+}

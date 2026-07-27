@@ -1,0 +1,10 @@
+{
+  "name": "Unity.RenderPipelines.GPUDriven.Runtime",
+  "references": [
+    "Unity.RenderPipelines.Core.Runtime",
+    "Unity.Collections",
+    "Unity.Mathematics",
+    "Unity.Burst"
+  ],
+  "allowUnsafeCode": true
+}

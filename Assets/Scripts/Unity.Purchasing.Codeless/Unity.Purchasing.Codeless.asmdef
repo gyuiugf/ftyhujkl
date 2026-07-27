@@ -1,0 +1,8 @@
+{
+  "name": "Unity.Purchasing.Codeless",
+  "references": [
+    "Unity.Purchasing",
+    "UnityEngine.UI"
+  ],
+  "allowUnsafeCode": true
+}

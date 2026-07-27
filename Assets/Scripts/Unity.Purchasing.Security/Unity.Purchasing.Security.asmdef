@@ -1,0 +1,7 @@
+{
+  "name": "Unity.Purchasing.Security",
+  "references": [
+    "Unity.Purchasing.SecurityCore"
+  ],
+  "allowUnsafeCode": true
+}
